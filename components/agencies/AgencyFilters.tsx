@@ -136,30 +136,30 @@ export function AgencyFilters() {
       <div className="border-b border-slate-100 last:border-b-0">
         <button
           onClick={() => toggleSection(id)}
-          className="w-full flex items-center justify-between py-4 text-left hover:bg-slate-50 -mx-6 px-6 transition-colors"
+          className="w-full flex items-center justify-between py-4 text-left hover:bg-slate-50/80 -mx-6 px-6 transition-all duration-200 rounded-md"
         >
-          <h4 className="text-sm font-semibold text-slate-900">{title}</h4>
+          <h4 className="text-sm font-semibold text-slate-900 tracking-tight">{title}</h4>
           {isOpen ? (
-            <ChevronUp className="h-4 w-4 text-slate-400" />
+            <ChevronUp className="h-4 w-4 text-slate-400 transition-transform" />
           ) : (
-            <ChevronDown className="h-4 w-4 text-slate-400" />
+            <ChevronDown className="h-4 w-4 text-slate-400 transition-transform" />
           )}
         </button>
-        {isOpen && <div className="pb-4 space-y-3">{children}</div>}
+        {isOpen && <div className="pb-5 space-y-3.5">{children}</div>}
       </div>
     );
   };
 
   return (
-    <Card className="sticky top-20">
-      <div className="space-y-0">
-        <div className="flex items-center justify-between pb-4 border-b border-slate-100 mb-4">
-          <h3 className="text-lg font-semibold text-slate-900">Filters</h3>
+    <Card className="sticky top-20 shadow-xl border-slate-200/80 bg-white rounded-2xl overflow-hidden">
+      <div className="p-6 space-y-0">
+        <div className="flex items-center justify-between pb-5 border-b border-slate-100 mb-6">
+          <h3 className="text-lg font-semibold text-slate-900 tracking-tight">Filters</h3>
           <Button
             variant="ghost"
             size="sm"
             onClick={clearFilters}
-            className="text-xs h-7"
+            className="text-xs h-7 text-slate-500 hover:text-slate-900 hover:bg-slate-50"
           >
             Clear
           </Button>
@@ -170,7 +170,7 @@ export function AgencyFilters() {
             placeholder="Search agencies..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="h-9 text-sm"
+            className="h-10 text-sm border-slate-200 focus:border-slate-300 focus:ring-slate-200"
           />
         </FilterSection>
 
@@ -178,7 +178,7 @@ export function AgencyFilters() {
           <select
             value={region}
             onChange={(e) => setRegion(e.target.value as Region | "")}
-            className="flex h-9 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2"
+            className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:border-slate-300 transition-colors"
           >
             <option value="">All Regions</option>
             {REGIONS.map((r) => (
@@ -190,19 +190,19 @@ export function AgencyFilters() {
         </FilterSection>
 
         <FilterSection id="services" title="Services">
-          <div className="space-y-2.5 max-h-64 overflow-y-auto pr-1">
+          <div className="space-y-2 max-h-64 overflow-y-auto pr-1.5 custom-scrollbar">
             {SERVICES.map((service) => (
               <label
                 key={service}
-                className="flex items-center space-x-2.5 cursor-pointer group hover:bg-slate-50 -mx-2 px-2 py-1.5 rounded transition-colors"
+                className="flex items-center space-x-3 cursor-pointer group hover:bg-slate-50/80 -mx-2 px-2.5 py-2 rounded-md transition-all duration-200"
               >
                 <input
                   type="checkbox"
                   checked={selectedServices.includes(service)}
                   onChange={() => toggleService(service)}
-                  className="rounded border-slate-300 text-slate-900 focus:ring-slate-900 focus:ring-offset-0"
+                  className="rounded border-slate-300 text-slate-900 focus:ring-slate-200 focus:ring-offset-0 w-4 h-4"
                 />
-                <span className="text-sm text-slate-700 group-hover:text-slate-900">
+                <span className="text-sm text-slate-600 group-hover:text-slate-900 font-medium transition-colors">
                   {service}
                 </span>
               </label>
@@ -212,23 +212,23 @@ export function AgencyFilters() {
 
         <FilterSection id="price" title="Price Range">
           <div>
-            <label className="text-xs text-muted-foreground mb-2 block">
+            <label className="text-xs text-slate-500 font-medium mb-3 block tracking-wide uppercase">
               USD per hour
             </label>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-3">
               <Input
                 type="number"
                 placeholder="Min"
                 value={priceMin}
                 onChange={(e) => setPriceMin(e.target.value)}
-                className="h-9 text-sm"
+                className="h-10 text-sm border-slate-200 focus:border-slate-300 focus:ring-slate-200"
               />
               <Input
                 type="number"
                 placeholder="Max"
                 value={priceMax}
                 onChange={(e) => setPriceMax(e.target.value)}
-                className="h-9 text-sm"
+                className="h-10 text-sm border-slate-200 focus:border-slate-300 focus:ring-slate-200"
               />
             </div>
           </div>
@@ -240,7 +240,7 @@ export function AgencyFilters() {
             onChange={(e) =>
               setCertification(e.target.value as CertificationBadge | "Any")
             }
-            className="flex h-9 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2"
+            className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:border-slate-300 transition-colors"
           >
             {CERTIFICATIONS.map((cert) => (
               <option key={cert} value={cert}>

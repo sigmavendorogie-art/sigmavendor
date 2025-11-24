@@ -10,10 +10,10 @@ export function HowItWorks() {
       title: "Step 1",
       content: (
         <div>
-          <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+          <h4 className="text-white text-xl md:text-2xl font-semibold mb-4 tracking-tight">
             Describe your ideal agency
           </h4>
-          <p className="text-slate-300 text-sm md:text-base font-normal mb-8">
+          <p className="text-slate-300 text-sm md:text-base font-medium mb-8">
             Tell us what services you&apos;re outsourcing — location, skills, pricing, and more. SigmaVendor AI will handle the rest. Examples: Virtual Assistant, LATAM, Crypto-friendly, &lt; $10/hr
           </p>
           <div className="grid grid-cols-1 gap-4">
@@ -32,10 +32,10 @@ export function HowItWorks() {
       title: "Step 2",
       content: (
         <div>
-          <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+          <h4 className="text-white text-xl md:text-2xl font-semibold mb-4 tracking-tight">
             Get matched — fast and accurately
           </h4>
-          <p className="text-slate-300 text-sm md:text-base font-normal mb-8">
+          <p className="text-slate-300 text-sm md:text-base font-medium mb-8">
             Our AI engine curates your shortlist from certified agencies. Compare reviews, badges, and pricing — all in one place. Look for SigmaVerified badges and 24hr turnaround times.
           </p>
           <div className="grid grid-cols-1 gap-4">
@@ -54,10 +54,10 @@ export function HowItWorks() {
       title: "Step 3",
       content: (
         <div>
-          <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+          <h4 className="text-white text-xl md:text-2xl font-semibold mb-4 tracking-tight">
             Hire with confidence
           </h4>
-          <p className="text-slate-300 text-sm md:text-base font-normal mb-8">
+          <p className="text-slate-300 text-sm md:text-base font-medium mb-8">
             Finalize the match, sign contracts. Global payments, done right. Start onboarding your new team today.
           </p>
           <div className="grid grid-cols-1 gap-4">
@@ -79,12 +79,12 @@ export function HowItWorks() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 lg:px-8 pb-0">
         <div className="text-center mb-12">
           <AnimatedHeading>
-            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4">
+            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 tracking-tight">
               How it works
             </h2>
           </AnimatedHeading>
           <AnimatedHeading delay={0.2}>
-            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+            <p className="text-lg lg:text-xl text-slate-400 max-w-2xl mx-auto font-medium">
               Find and verify VA agencies easily
             </p>
           </AnimatedHeading>

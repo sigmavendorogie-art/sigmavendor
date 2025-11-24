@@ -129,14 +129,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           {/* Left Side: Title */}
           <div className="flex flex-col justify-center p-4 lg:p-8">
             <AnimatedHeading>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-lg max-w-lg" style={{ lineHeight: '1.1' }}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-lg max-w-lg tracking-tight" style={{ lineHeight: '1.1' }}>
                 <span className="bg-gradient-to-r from-white via-white to-[#748298] bg-clip-text text-transparent inline-block" style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', paddingBottom: '0.1em' }}>
                   {title}
                 </span>
               </h1>
             </AnimatedHeading>
             <AnimatedHeading delay={0.2}>
-              <p className="text-lg md:text-xl text-slate-300 mt-4 max-w-lg">
+              <p className="text-lg md:text-xl text-slate-400 mt-4 max-w-lg font-medium">
                 {subtitle}
               </p>
             </AnimatedHeading>
@@ -161,21 +161,21 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                <h3 className="text-xl font-semibold text-slate-900 mb-2 tracking-tight">
                   Thank you!
                 </h3>
-                <p className="text-slate-600">
+                <p className="text-slate-500 font-medium">
                   We&apos;ll be in touch soon with curated agency recommendations.
                 </p>
               </div>
             ) : (
               <>
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">Let&apos;s talk! 👋</h2>
+                <h2 className="text-2xl font-semibold text-slate-900 mb-6 tracking-tight">Let&apos;s talk! 👋</h2>
 
                 {/* Email & Socials */}
                 <div className="mb-6">
-                  <p className="text-slate-600 mb-2">Mail us at</p>
-                  <a href={`mailto:${contactEmail}`} className="text-slate-900 hover:underline font-medium">
+                  <p className="text-slate-500 mb-2 font-medium">Mail us at</p>
+                  <a href={`mailto:${contactEmail}`} className="text-slate-900 hover:underline font-semibold">
                     {contactEmail}
                   </a>
                   <div className="flex items-center space-x-3 mt-4">
@@ -194,7 +194,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <p className="text-slate-600">Leave us a brief message</p>
+                  <p className="text-slate-500 font-medium">Leave us a brief message</p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-slate-700">Your name</Label>
@@ -237,7 +237,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   </div>
 
                   <div className="space-y-4">
-                    <p className="text-slate-600">I&apos;m looking for...</p>
+                    <p className="text-slate-500 font-medium">I&apos;m looking for...</p>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                       {projectTypeOptions.map((option) => (
                         <div key={option} className="flex items-center space-x-2">
