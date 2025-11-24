@@ -7,7 +7,7 @@
     "shortDescription": "Specialized sales development and SDR services from Mexico, serving LATAM and North American markets.",
     "longDescription": "Mexico Sales Force is a boutique agency focused exclusively on sales development and SDR services. Founded in 2020, we've built a team of 50+ bilingual (English/Spanish) sales professionals who excel at cold outbound, lead qualification, and appointment setting. Our team understands both US and LATAM markets, making us ideal for companies expanding into Spanish-speaking regions.",
     "websiteUrl": "https://example.com/mexico-sales-force",
-    "logoUrl": "https://placehold.co/128x128/0ea5e9/ffffff?text=MS&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-3.png",
     "foundedYear": 2020,
     "teamSize": {
       "min": 50,
@@ -71,7 +71,7 @@
     "shortDescription": "Leading Philippine-based VA agency specializing in customer support and general virtual assistance for US and European clients.",
     "longDescription": "Philippines VA Pros has been connecting businesses with skilled virtual assistants from the Philippines since 2018. We specialize in customer support, general VA services, and back office operations. Our team of 150+ professionals is fluent in English and works across multiple time zones to provide 24/7 support when needed. We pride ourselves on high-quality work, cultural alignment with Western businesses, and competitive pricing.",
     "websiteUrl": "https://example.com/philippines-va-pros",
-    "logoUrl": "https://placehold.co/128x128/10b981/ffffff?text=PV&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-1.png",
     "foundedYear": 2018,
     "teamSize": {
       "min": 150,
@@ -138,7 +138,7 @@
     "shortDescription": "Specialized DevOps, technical support, and IT services from Brazil, serving global tech companies.",
     "longDescription": "Brazil DevOps Team provides world-class technical support and DevOps services to SaaS companies, fintech startups, and technology businesses. Our team of 80+ technical specialists is trained in modern cloud infrastructure, CI/CD pipelines, and can handle complex technical inquiries. We offer 24/7 coverage and specialize in supporting English, Portuguese, and Spanish-speaking customers.",
     "websiteUrl": "https://example.com/brazil-devops",
-    "logoUrl": "https://placehold.co/128x128/f59e0b/ffffff?text=BD&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-2.png",
     "foundedYear": 2019,
     "teamSize": {
       "min": 80,
@@ -146,13 +146,13 @@
     },
     "hqLocation": {
       "country": "Brazil",
-      "city": "S\u00e3o Paulo",
+      "city": "São Paulo",
       "timeZoneLabel": "GMT-3"
     },
     "deliveryLocations": [
       {
         "country": "Brazil",
-        "city": "S\u00e3o Paulo"
+        "city": "São Paulo"
       },
       {
         "country": "Brazil",
@@ -202,7 +202,7 @@
     "shortDescription": "Dedicated customer success and support teams from Kenya, offering cost-effective solutions for growing businesses.",
     "longDescription": "Kenya Customer Success brings together talented professionals from Kenya and East Africa to deliver exceptional customer support and success services. Our team of 100+ agents is known for excellent English communication, cultural alignment with Western businesses, and competitive pricing. We specialize in customer onboarding, account management, and proactive customer success initiatives.",
     "websiteUrl": "https://example.com/kenya-customer-success",
-    "logoUrl": "https://placehold.co/128x128/ef4444/ffffff?text=KC&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-5.png",
     "foundedYear": 2021,
     "teamSize": {
       "min": 100,
@@ -262,7 +262,7 @@
     "shortDescription": "Specialized real estate VA services including lead generation, CRM management, and transaction support.",
     "longDescription": "Nigeria Real Estate VA is a specialized agency focused exclusively on real estate virtual assistant services. Our team of 60+ professionals understands the US real estate market and provides services including lead generation, CRM management, transaction coordination, and marketing support. We work with real estate teams, brokers, and property management companies across the United States.",
     "websiteUrl": "https://example.com/nigeria-real-estate-va",
-    "logoUrl": "https://placehold.co/128x128/8b5cf6/ffffff?text=NR&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-6.png",
     "foundedYear": 2020,
     "teamSize": {
       "min": 60,
@@ -320,7 +320,7 @@
     "shortDescription": "Comprehensive e-commerce support services including order management, customer service, and inventory coordination.",
     "longDescription": "Vietnam E-commerce Support provides end-to-end e-commerce support services to online retailers, DTC brands, and marketplace sellers. Our team of 120+ professionals handles order processing, customer inquiries, returns management, inventory updates, and vendor coordination. We integrate with major e-commerce platforms including Shopify, WooCommerce, Amazon, and eBay.",
     "websiteUrl": "https://example.com/vietnam-ecommerce",
-    "logoUrl": "https://placehold.co/128x128/ec4899/ffffff?text=VE&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-4.png",
     "foundedYear": 2019,
     "teamSize": {
       "min": 120,
@@ -384,7 +384,7 @@
     "shortDescription": "Expert accounting, bookkeeping, and financial administration services from Eastern Europe.",
     "longDescription": "Serbia Accounting VA specializes in accounting, bookkeeping, and financial administration services for US and European businesses. Our team of 45+ certified accountants and bookkeepers is proficient in QuickBooks, Xero, and other accounting software. We handle accounts payable, accounts receivable, bank reconciliations, and financial reporting. Our team works in European time zones, making them ideal for European clients.",
     "websiteUrl": "https://example.com/serbia-accounting",
-    "logoUrl": "https://placehold.co/128x128/06b6d4/ffffff?text=SA&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-1.png",
     "foundedYear": 2020,
     "teamSize": {
       "min": 45,
@@ -443,7 +443,7 @@
     "shortDescription": "Dedicated SaaS customer support and success teams from Argentina, serving global software companies.",
     "longDescription": "Argentina SaaS Support provides world-class customer support and success services to SaaS companies worldwide. Our team of 90+ support specialists is trained in modern support tools, ticketing systems, and can handle complex technical inquiries. We offer 24/7 coverage and specialize in supporting English and Spanish-speaking customers. Our team understands SaaS workflows and can provide both technical and account management support.",
     "websiteUrl": "https://example.com/argentina-saas",
-    "logoUrl": "https://placehold.co/128x128/14b8a6/ffffff?text=AS&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-6.png",
     "foundedYear": 2021,
     "teamSize": {
       "min": 90,
@@ -461,7 +461,7 @@
       },
       {
         "country": "Argentina",
-        "city": "C\u00f3rdoba"
+        "city": "Córdoba"
       }
     ],
     "regionsServed": [
@@ -509,7 +509,7 @@
     "shortDescription": "Specialized medical billing, coding, and healthcare administration services from Egypt.",
     "longDescription": "Egypt Medical Billing provides comprehensive medical billing, coding, and healthcare administration services to US healthcare providers. Our team of 75+ certified medical coders and billing specialists is trained in US healthcare regulations, HIPAA compliance, and major billing systems. We handle claims submission, payment posting, denial management, and patient billing inquiries.",
     "websiteUrl": "https://example.com/egypt-medical",
-    "logoUrl": "https://placehold.co/128x128/6366f1/ffffff?text=EM&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-4.png",
     "foundedYear": 2019,
     "teamSize": {
       "min": 75,
@@ -568,7 +568,7 @@
     "shortDescription": "Expert technical support and IT services from Ukraine, serving global technology companies.",
     "longDescription": "Ukraine Tech Support provides world-class technical support services to SaaS companies, fintech startups, and technology businesses. Our team of 110+ technical specialists is trained in modern support tools, ticketing systems, and can handle complex technical inquiries. We offer 24/7 coverage and specialize in supporting English, Ukrainian, and Russian-speaking customers.",
     "websiteUrl": "https://example.com/ukraine-tech",
-    "logoUrl": "https://placehold.co/128x128/f97316/ffffff?text=UT&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-3.png",
     "foundedYear": 2018,
     "teamSize": {
       "min": 110,
@@ -631,7 +631,7 @@
     "shortDescription": "Elite sales development and SDR services from Colombia, specializing in B2B SaaS and fintech.",
     "longDescription": "Colombia Sales Specialists is a boutique agency focused on high-quality sales development services. Our team of 35+ sales professionals specializes in B2B SaaS and fintech outbound. We provide personalized service, deep industry knowledge, and exceptional results. Our team is bilingual (English/Spanish) and understands both US and LATAM markets.",
     "websiteUrl": "https://example.com/colombia-sales",
-    "logoUrl": "https://placehold.co/128x128/84cc16/ffffff?text=CS&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-1.png",
     "foundedYear": 2021,
     "teamSize": {
       "min": 35,
@@ -639,17 +639,17 @@
     },
     "hqLocation": {
       "country": "Colombia",
-      "city": "Medell\u00edn",
+      "city": "Medellín",
       "timeZoneLabel": "GMT-5"
     },
     "deliveryLocations": [
       {
         "country": "Colombia",
-        "city": "Medell\u00edn"
+        "city": "Medellín"
       },
       {
         "country": "Colombia",
-        "city": "Bogot\u00e1"
+        "city": "Bogotá"
       }
     ],
     "regionsServed": [
@@ -692,7 +692,7 @@
     "shortDescription": "Full-service back office operations including data entry, research, and administrative support.",
     "longDescription": "South Africa Back Office provides comprehensive back office support services to businesses worldwide. Our team of 130+ professionals handles data entry, research, document processing, and administrative tasks. We serve clients across industries including real estate, healthcare, legal, and professional services. Our team is known for accuracy, attention to detail, and competitive pricing.",
     "websiteUrl": "https://example.com/southafrica-backoffice",
-    "logoUrl": "https://placehold.co/128x128/eab308/ffffff?text=SA&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-5.png",
     "foundedYear": 2020,
     "teamSize": {
       "min": 130,
@@ -756,7 +756,7 @@
     "shortDescription": "Specialized VA services for crypto and Web3 companies, with crypto-native payment support.",
     "longDescription": "Poland Crypto VA is a specialized agency designed to serve crypto and Web3 companies. Our team of 70+ professionals understands blockchain technology, DeFi protocols, and crypto-native workflows. We offer customer support for crypto exchanges, community management for NFT projects, and administrative support for DAOs. All payments are processed via stablecoins through SigmaRemote integration.",
     "websiteUrl": "https://example.com/poland-crypto",
-    "logoUrl": "https://placehold.co/128x128/0ea5e9/ffffff?text=PC&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-3.png",
     "foundedYear": 2022,
     "teamSize": {
       "min": 70,
@@ -821,7 +821,7 @@
     "shortDescription": "Comprehensive e-commerce support services for online retailers and marketplace sellers.",
     "longDescription": "Indonesia E-commerce Support provides end-to-end e-commerce support services to online retailers, DTC brands, and marketplace sellers. Our team of 140+ professionals handles order processing, customer inquiries, returns management, inventory updates, and vendor coordination. We integrate with major e-commerce platforms and specialize in Southeast Asian markets.",
     "websiteUrl": "https://example.com/indonesia-ecommerce",
-    "logoUrl": "https://placehold.co/128x128/10b981/ffffff?text=IE&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-3.png",
     "foundedYear": 2020,
     "teamSize": {
       "min": 140,
@@ -886,7 +886,7 @@
     "shortDescription": "Specialized medical billing, coding, and healthcare administration services from Eastern Europe.",
     "longDescription": "Romania Medical Billing provides comprehensive medical billing, coding, and healthcare administration services to US healthcare providers. Our team of 85+ certified medical coders and billing specialists is trained in US healthcare regulations, HIPAA compliance, and major billing systems. We handle claims submission, payment posting, denial management, and patient billing inquiries.",
     "websiteUrl": "https://example.com/romania-medical",
-    "logoUrl": "https://placehold.co/128x128/f59e0b/ffffff?text=RM&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-1.png",
     "foundedYear": 2018,
     "teamSize": {
       "min": 85,
@@ -947,7 +947,7 @@
     "shortDescription": "Hybrid virtual assistant network combining US-based project managers with offshore execution teams.",
     "longDescription": "US Hybrid VA Network provides a unique hybrid model combining US-based project managers and account managers with offshore execution teams. This model offers the best of both worlds: US-based oversight and communication with cost-effective offshore execution. Our team of 200+ professionals includes 30+ US-based managers and 170+ offshore VAs across multiple countries.",
     "websiteUrl": "https://example.com/us-hybrid-va",
-    "logoUrl": "https://placehold.co/128x128/ef4444/ffffff?text=UH&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-6.png",
     "foundedYear": 2017,
     "teamSize": {
       "min": 200,
@@ -1017,7 +1017,7 @@
     "shortDescription": "Specialized VA services for crypto and Web3 companies, with crypto-native payment support.",
     "longDescription": "Philippines Crypto VA is the first agency specifically designed to serve crypto and Web3 companies. Our team of 80+ professionals understands blockchain technology, DeFi protocols, and crypto-native workflows. We offer customer support for crypto exchanges, community management for NFT projects, and administrative support for DAOs. All payments are processed via stablecoins through SigmaRemote integration.",
     "websiteUrl": "https://example.com/philippines-crypto-va",
-    "logoUrl": "https://placehold.co/128x128/8b5cf6/ffffff?text=PC&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-6.png",
     "foundedYear": 2022,
     "teamSize": {
       "min": 80,
@@ -1078,7 +1078,7 @@
     "shortDescription": "Global network of virtual assistants covering all time zones and service categories.",
     "longDescription": "Global VA Network is a comprehensive virtual assistant agency with teams across multiple continents. We provide 24/7 coverage and support for businesses of all sizes. Our network includes specialists in customer support, sales, e-commerce, real estate, accounting, and technical support. With 500+ professionals worldwide, we can scale quickly and provide coverage in any time zone.",
     "websiteUrl": "https://example.com/global-va-network",
-    "logoUrl": "https://placehold.co/128x128/ec4899/ffffff?text=GV&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-6.png",
     "foundedYear": 2016,
     "teamSize": {
       "min": 500,
@@ -1104,7 +1104,7 @@
       },
       {
         "country": "Colombia",
-        "city": "Bogot\u00e1"
+        "city": "Bogotá"
       },
       {
         "country": "Poland",
@@ -1167,7 +1167,7 @@
     "shortDescription": "Expert tech support and customer service teams from Colombia, serving global SaaS and tech companies.",
     "longDescription": "Colombia Tech Support provides world-class technical support services to SaaS companies, fintech startups, and technology businesses. Our team of 80+ technical specialists is trained in modern support tools, ticketing systems, and can handle complex technical inquiries. We offer 24/7 coverage and specialize in supporting English and Spanish-speaking customers.",
     "websiteUrl": "https://example.com/colombia-tech-support",
-    "logoUrl": "https://placehold.co/128x128/06b6d4/ffffff?text=CT&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-2.png",
     "foundedYear": 2019,
     "teamSize": {
       "min": 80,
@@ -1175,17 +1175,17 @@
     },
     "hqLocation": {
       "country": "Colombia",
-      "city": "Bogot\u00e1",
+      "city": "Bogotá",
       "timeZoneLabel": "GMT-5"
     },
     "deliveryLocations": [
       {
         "country": "Colombia",
-        "city": "Bogot\u00e1"
+        "city": "Bogotá"
       },
       {
         "country": "Colombia",
-        "city": "Medell\u00edn"
+        "city": "Medellín"
       }
     ],
     "regionsServed": [
@@ -1231,7 +1231,7 @@
     "shortDescription": "Full-service back office operations including data entry, research, and administrative support.",
     "longDescription": "Kenya Back Office provides comprehensive back office support services to businesses worldwide. Our team of 120+ professionals handles data entry, research, document processing, and administrative tasks. We serve clients across industries including real estate, healthcare, legal, and professional services. Our team is known for accuracy, attention to detail, and competitive pricing.",
     "websiteUrl": "https://example.com/kenya-back-office",
-    "logoUrl": "https://placehold.co/128x128/14b8a6/ffffff?text=KB&font=roboto&font-weight=bold&font-size=48",
+    "logoUrl": "/images/company-logos/logo-1.png",
     "foundedYear": 2020,
     "teamSize": {
       "min": 120,

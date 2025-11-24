@@ -2,12 +2,10 @@
 
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Agency } from "@/lib/types";
 import { CertificationBadgesRow } from "@/components/agencies/CertificationBadgesRow";
-import { Loader2, Send, Sparkles } from "lucide-react";
+import { Loader2, Send } from "lucide-react";
 import Link from "next/link";
 
 type ConversationMessage =
@@ -104,53 +102,23 @@ export function AgencyAiSearchPanel() {
   };
 
   return (
-    <Card className="p-6 lg:p-8">
-      <div className="mb-6">
-        <div className="flex items-center gap-2 mb-2">
-          <Sparkles className="h-5 w-5 text-slate-600" />
-          <h2 className="text-2xl font-bold text-slate-900">Ask SigmaVendor AI</h2>
-        </div>
-        <p className="text-slate-600">
-          Describe the VA agency you&apos;re looking for and let AI suggest matches.
+    <div className="p-6 lg:p-8 bg-black text-white rounded-xl border border-white/15 shadow-sm bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-gradient-3.svg')] bg-center bg-cover relative overflow-hidden">
+      <div className="relative z-10 mb-6">
+        <h2 className="text-2xl font-semibold mb-2">
+          <span className="bg-gradient-to-r from-white via-white to-[#748298] bg-clip-text text-transparent" style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            Find agencies with AI
+          </span>
+        </h2>
+        <p className="text-slate-300 mb-4">
+          Get matched with certified teams — tailored to your brief.
         </p>
+        <div className="flex items-center gap-2 text-xs text-slate-400">
+          <span>🔒 Private & secure • LLM-matched</span>
+        </div>
       </div>
 
       {/* Chat area */}
-      <div className="mb-6 space-y-4 max-h-[600px] overflow-y-auto pr-2">
-        {messages.length === 0 && (
-          <div className="text-center py-8 text-slate-500">
-            <p>Start a conversation to find the perfect VA agency for your needs.</p>
-            <p className="text-sm mt-2">
-              Try: &quot;I need a Spanish-speaking sales team in LATAM&quot;
-            </p>
-            <div className="mt-4 flex flex-wrap justify-center gap-2">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => handleFollowUp("I need 24/7 customer support in the Philippines")}
-                className="text-xs"
-              >
-                💬 24/7 Support
-              </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => handleFollowUp("Show me crypto-friendly agencies")}
-                className="text-xs"
-              >
-                ₿ Crypto-Friendly
-              </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => handleFollowUp("I need a sales team in LATAM")}
-                className="text-xs"
-              >
-                🌎 LATAM Sales
-              </Button>
-            </div>
-          </div>
-        )}
+      <div className="relative z-10 mb-6 space-y-4 max-h-[600px] overflow-y-auto pr-2">
 
         {messages.map((message, index) => (
           <div
@@ -162,8 +130,8 @@ export function AgencyAiSearchPanel() {
             <div
               className={`max-w-[80%] rounded-2xl px-4 py-3 ${
                 message.role === "user"
-                  ? "bg-slate-900 text-white"
-                  : "bg-slate-100 text-slate-900"
+                  ? "bg-white/10 text-white"
+                  : "bg-white/5 text-white border border-white/10"
               }`}
             >
               {message.role === "user" ? (
@@ -175,7 +143,7 @@ export function AgencyAiSearchPanel() {
                   {/* Recommended agencies */}
                   {message.agencies && message.agencies.length > 0 && (
                     <div className="mt-4 space-y-3">
-                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-600">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-300">
                         Recommended Agencies ({message.agencies.length})
                       </p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -187,24 +155,24 @@ export function AgencyAiSearchPanel() {
                               href={`/agencies/${agency.slug}`}
                               className="block"
                             >
-                              <Card className="p-4 hover:shadow-md transition-shadow cursor-pointer">
+                              <Card className="p-4 hover:shadow-md transition-shadow cursor-pointer bg-white/5 border-white/10">
                                 <div className="space-y-2">
                                   <div className="flex items-start justify-between">
                                     <div className="flex-1 min-w-0">
-                                      <h4 className="font-semibold text-slate-900 truncate">
+                                      <h4 className="font-semibold text-white truncate">
                                         {agency.name}
                                       </h4>
-                                      <p className="text-xs text-slate-600 line-clamp-1">
+                                      <p className="text-xs text-slate-300 line-clamp-1">
                                         {agency.tagline}
                                       </p>
                                     </div>
                                   </div>
                                   {reason && (
-                                    <p className="text-xs text-slate-700 italic bg-slate-50 p-2 rounded">
+                                    <p className="text-xs text-slate-300 italic bg-white/5 p-2 rounded border border-white/10">
                                       {reason}
                                     </p>
                                   )}
-                                  <div className="flex items-center gap-2 text-xs text-slate-600">
+                                  <div className="flex items-center gap-2 text-xs text-slate-300">
                                     <span>
                                       ${agency.priceRange.minUsdPerHour}–
                                       {agency.priceRange.maxUsdPerHour}/hr
@@ -233,20 +201,18 @@ export function AgencyAiSearchPanel() {
                   {message.followUpQuestions &&
                     message.followUpQuestions.length > 0 && (
                       <div className="mt-4">
-                        <p className="text-xs font-semibold uppercase tracking-wide text-slate-600 mb-2">
+                        <p className="text-xs font-semibold uppercase tracking-wide text-slate-300 mb-2">
                           Follow-up questions:
                         </p>
                         <div className="flex flex-wrap gap-2">
                           {message.followUpQuestions.map((question, qIndex) => (
-                            <Button
+                            <span
                               key={qIndex}
-                              variant="outline"
-                              size="sm"
                               onClick={() => handleFollowUp(question)}
-                              className="text-xs"
+                              className="bg-white/10 text-sm text-white px-3 py-1 rounded-full cursor-pointer hover:bg-white/20 transition-colors"
                             >
                               {question}
-                            </Button>
+                            </span>
                           ))}
                         </div>
                       </div>
@@ -259,8 +225,8 @@ export function AgencyAiSearchPanel() {
 
         {isLoading && (
           <div className="flex justify-start">
-            <div className="bg-slate-100 rounded-2xl px-4 py-3">
-              <div className="flex items-center gap-2 text-slate-600">
+            <div className="bg-white/5 border border-white/10 rounded-2xl px-4 py-3">
+              <div className="flex items-center gap-2 text-white">
                 <Loader2 className="h-4 w-4 animate-spin" />
                 <span className="text-sm">Thinking...</span>
               </div>
@@ -270,32 +236,36 @@ export function AgencyAiSearchPanel() {
       </div>
 
       {/* Input area */}
-      <form id="ai-search-form" onSubmit={handleSubmit} className="space-y-2">
-        <Textarea
+      <form id="ai-search-form" onSubmit={handleSubmit} className="relative z-10 space-y-2">
+        <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="E.g., 'I need a 24/7 customer support team in the Philippines with crypto-friendly payments'"
+          placeholder='E.g., "24/7 support team in the Philippines with crypto-friendly payouts"'
           rows={3}
-          className="resize-none"
+          className="bg-white/10 border border-white/20 rounded-md text-white placeholder:text-gray-400 focus:bg-white/15 p-3 w-full resize-none focus:outline-none focus:ring-2 focus:ring-white/20"
           disabled={isLoading}
         />
         <div className="flex justify-end">
-          <Button type="submit" disabled={isLoading || !input.trim()}>
+          <button
+            type="submit"
+            disabled={isLoading || !input.trim()}
+            className="bg-white text-black px-6 py-2 rounded-md font-medium hover:bg-slate-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center gap-2"
+          >
             {isLoading ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                <Loader2 className="h-4 w-4 animate-spin" />
                 Searching...
               </>
             ) : (
               <>
-                <Send className="mr-2 h-4 w-4" />
+                <Send className="h-4 w-4" />
                 Ask AI
               </>
             )}
-          </Button>
+          </button>
         </div>
       </form>
-    </Card>
+    </div>
   );
 }
 

@@ -1,49 +1,102 @@
-import { Search, CheckCircle2, Wallet } from "lucide-react";
-import { Card } from "@/components/ui/card";
+"use client";
 
-const steps = [
-  {
-    icon: Search,
-    title: "Describe your needs",
-    description: "Search our directory or fill out a form to describe what you're looking for.",
-  },
-  {
-    icon: CheckCircle2,
-    title: "See AI-ready, certified agencies",
-    description: "Browse vetted agencies with certifications and detailed profiles.",
-  },
-  {
-    icon: Wallet,
-    title: "Pay them globally with SigmaRemote",
-    description: "Use SigmaRemote to pay agencies anywhere with USD wallets and stablecoins.",
-  },
-];
+import Image from "next/image";
+import { Timeline } from "@/components/ui/timeline";
+import { AnimatedHeading } from "@/components/ui/animated-heading";
 
 export function HowItWorks() {
+  const timelineData = [
+    {
+      title: "Step 1",
+      content: (
+        <div>
+          <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+            Describe your ideal agency
+          </h4>
+          <p className="text-slate-300 text-sm md:text-base font-normal mb-8">
+            Tell us what services you&apos;re outsourcing — location, skills, pricing, and more. SigmaVendor AI will handle the rest. Examples: Virtual Assistant, LATAM, Crypto-friendly, &lt; $10/hr
+          </p>
+          <div className="grid grid-cols-1 gap-4">
+            <Image
+              src="/How it works/image1.jpg"
+              alt="Describe your ideal agency"
+              width={800}
+              height={500}
+              className="rounded-lg object-cover h-44 md:h-60 lg:h-80 w-full shadow-lg"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Step 2",
+      content: (
+        <div>
+          <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+            Get matched — fast and accurately
+          </h4>
+          <p className="text-slate-300 text-sm md:text-base font-normal mb-8">
+            Our AI engine curates your shortlist from certified agencies. Compare reviews, badges, and pricing — all in one place. Look for SigmaVerified badges and 24hr turnaround times.
+          </p>
+          <div className="grid grid-cols-1 gap-4">
+            <Image
+              src="/How it works/image2.jpg"
+              alt="Get matched"
+              width={800}
+              height={500}
+              className="rounded-lg object-cover h-44 md:h-60 lg:h-80 w-full shadow-lg"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Step 3",
+      content: (
+        <div>
+          <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+            Hire with confidence
+          </h4>
+          <p className="text-slate-300 text-sm md:text-base font-normal mb-8">
+            Finalize the match, sign contracts. Global payments, done right. Start onboarding your new team today.
+          </p>
+          <div className="grid grid-cols-1 gap-4">
+            <Image
+              src="/How it works/image3.jpg"
+              alt="Hire with confidence"
+              width={800}
+              height={500}
+              className="rounded-lg object-cover h-44 md:h-60 lg:h-80 w-full shadow-lg"
+            />
+          </div>
+        </div>
+      ),
+    },
+  ];
+
   return (
-    <section className="py-16 lg:py-24">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-          How it works
-        </h2>
-        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-          Find, verify, and pay VA agencies seamlessly
-        </p>
+    <section className="relative w-screen overflow-hidden bg-black pt-16 lg:pt-24 pb-0 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-gradient-3.svg')] bg-center bg-cover">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 lg:px-8 pb-0">
+        <div className="text-center mb-12">
+          <AnimatedHeading>
+            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4">
+              How it works
+            </h2>
+          </AnimatedHeading>
+          <AnimatedHeading delay={0.2}>
+            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+              Find and verify VA agencies easily
+            </p>
+          </AnimatedHeading>
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {steps.map((step, index) => (
-          <Card key={index} className="text-center p-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 mb-6">
-              <step.icon className="h-8 w-8 text-slate-900" />
-            </div>
-            <h3 className="text-xl font-semibold text-slate-900 mb-3">
-              {step.title}
-            </h3>
-            <p className="text-slate-600">{step.description}</p>
-          </Card>
-        ))}
+      <div className="relative z-10 w-full">
+        <Timeline data={timelineData} />
       </div>
+
+      {/* Gradient fade overlay for smooth transition */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none z-20" />
     </section>
   );
 }
