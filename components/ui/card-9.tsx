@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 import { Button, type ButtonProps } from "@/components/ui/button";
 
-interface PromoCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface PromoCardProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {
   label: string;
   title: React.ReactNode;
   buttonText: string;
