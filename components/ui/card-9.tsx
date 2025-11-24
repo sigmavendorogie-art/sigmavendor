@@ -8,7 +8,15 @@ import { cn } from "@/lib/utils";
 
 import { Button, type ButtonProps } from "@/components/ui/button";
 
-interface PromoCardProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {
+interface PromoCardProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 
+  'title' | 
+  'onDrag' | 
+  'onDragStart' | 
+  'onDragEnd' | 
+  'onAnimationStart' | 
+  'onAnimationEnd' | 
+  'onAnimationIteration'
+> {
   label: string;
   title: React.ReactNode;
   buttonText: string;

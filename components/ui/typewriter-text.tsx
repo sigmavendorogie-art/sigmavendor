@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react"
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
  
 export interface TypewriterProps {
@@ -29,7 +29,7 @@ export function Typewriter({
   const [textArrayIndex, setTextArrayIndex] = useState(0);
  
   // Validate and process input text
-  const textArray = Array.isArray(text) ? text : [text];
+  const textArray = useMemo(() => Array.isArray(text) ? text : [text], [text]);
   const currentText = textArray[textArrayIndex] || "";
  
   useEffect(() => {
@@ -67,7 +67,8 @@ export function Typewriter({
     deleteSpeed,
     delay,
     displayText,
-    text,
+    textArray.length,
+    textArrayIndex,
   ]);
  
   return (
