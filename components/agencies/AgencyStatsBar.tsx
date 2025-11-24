@@ -12,7 +12,7 @@ export function AgencyStatsBar({ agency }: { agency: Agency }) {
           <div>
             <p className="text-sm text-slate-600">Team Size</p>
             <p className="text-lg font-semibold text-slate-900">
-              {agency.teamSize.min}–{agency.teamSize.max}
+              {agency.teamSize.min}-{agency.teamSize.max}
             </p>
           </div>
         </div>
@@ -25,7 +25,7 @@ export function AgencyStatsBar({ agency }: { agency: Agency }) {
         <div>
           <p className="text-sm text-slate-600">Price Range</p>
           <p className="text-lg font-semibold text-slate-900">
-            ${agency.priceRange.minUsdPerHour}–{agency.priceRange.maxUsdPerHour}/hr
+            ${agency.priceRange.minUsdPerHour}-{agency.priceRange.maxUsdPerHour}/hr
           </p>
         </div>
       </div>

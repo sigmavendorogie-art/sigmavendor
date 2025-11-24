@@ -329,7 +329,7 @@ export default function AgencyDetailPage({ params }: Props) {
                     <span>Team Size</span>
                   </div>
                   <p className="text-base font-medium text-slate-900">
-                    {agency.teamSize.min}–{agency.teamSize.max} professionals
+                    {agency.teamSize.min}-{agency.teamSize.max} professionals
                   </p>
                 </div>
               )}
@@ -340,7 +340,7 @@ export default function AgencyDetailPage({ params }: Props) {
                   <span>Pricing</span>
                 </div>
                 <p className="text-base font-medium text-slate-900">
-                  ${agency.priceRange.minUsdPerHour}–${agency.priceRange.maxUsdPerHour}/hr
+                  ${agency.priceRange.minUsdPerHour}-${agency.priceRange.maxUsdPerHour}/hr
                   {agency.minMonthlyRetainerUsd && (
                     <span className="text-slate-500 font-normal ml-2">
                       (min. ${agency.minMonthlyRetainerUsd.toLocaleString()}/mo)

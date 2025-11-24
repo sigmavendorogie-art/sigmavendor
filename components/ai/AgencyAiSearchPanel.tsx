@@ -110,7 +110,7 @@ export function AgencyAiSearchPanel() {
           </span>
         </h2>
         <p className="text-slate-300 mb-4">
-          Get matched with certified teams — tailored to your brief.
+          Get matched with certified teams - tailored to your brief.
         </p>
         <div className="flex items-center gap-2 text-xs text-slate-400">
           <span>🔒 Private & secure • LLM-matched</span>
@@ -174,7 +174,7 @@ export function AgencyAiSearchPanel() {
                                   )}
                                   <div className="flex items-center gap-2 text-xs text-slate-300">
                                     <span>
-                                      ${agency.priceRange.minUsdPerHour}–
+                                      ${agency.priceRange.minUsdPerHour}-
                                       {agency.priceRange.maxUsdPerHour}/hr
                                     </span>
                                     <span>•</span>

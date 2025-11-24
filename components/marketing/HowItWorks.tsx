@@ -14,7 +14,7 @@ export function HowItWorks() {
             Describe your ideal agency
           </h4>
           <p className="text-slate-300 text-sm md:text-base font-medium mb-8">
-            Tell us what services you&apos;re outsourcing — location, skills, pricing, and more. SigmaVendor AI will handle the rest. Examples: Virtual Assistant, LATAM, Crypto-friendly, &lt; $10/hr
+            Tell us what services you&apos;re outsourcing - location, skills, pricing, and more. SigmaVendor AI will handle the rest. Examples: Virtual Assistant, LATAM, Crypto-friendly, &lt; $10/hr
           </p>
           <div className="grid grid-cols-1 gap-4">
             <Image
@@ -33,10 +33,10 @@ export function HowItWorks() {
       content: (
         <div>
           <h4 className="text-white text-xl md:text-2xl font-semibold mb-4 tracking-tight">
-            Get matched — fast and accurately
+            Get matched - fast and accurately
           </h4>
           <p className="text-slate-300 text-sm md:text-base font-medium mb-8">
-            Our AI engine curates your shortlist from certified agencies. Compare reviews, badges, and pricing — all in one place. Look for SigmaVerified badges and 24hr turnaround times.
+            Our AI engine curates your shortlist from certified agencies. Compare reviews, badges, and pricing - all in one place. Look for SigmaVerified badges and 24hr turnaround times.
           </p>
           <div className="grid grid-cols-1 gap-4">
             <Image
