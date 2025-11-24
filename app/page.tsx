@@ -81,7 +81,7 @@ export default function HomePage() {
           </div>
 
           {/* AI Section */}
-          <section id="ai-search" className="py-8">
+          <section id="ai-search" className="pt-16 pb-8 scroll-mt-24 md:scroll-mt-28">
             <AgencyAiSearchPanel />
           </section>
 

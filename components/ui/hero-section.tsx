@@ -85,7 +85,7 @@ export default function HeroSection() {
                  bg-center bg-cover pb-16 pt-20 -mt-20 overflow-hidden"
     >
 
-      <div className="relative z-10 flex items-center gap-2 border border-white/15 rounded-full px-4 py-2 text-sm mt-16 md:mt-24 mx-auto">
+      <div className="relative z-10 flex items-center gap-2 border border-white/15 rounded-full px-4 py-2 text-sm mt-16 md:mt-24 lg:mt-12 mx-auto">
         <p>New: AI-powered agency matching now available</p>
         <Link href="/#ai-search" className="flex items-center gap-1 font-medium">
           Try it now
@@ -109,36 +109,36 @@ export default function HeroSection() {
         </Link>
       </div>
 
-      <h1 className="relative z-10 text-4xl md:text-6xl text-center font-semibold max-w-3xl mt-5 px-4 leading-relaxed py-2">
+      <h1 className="relative z-10 text-4xl md:text-6xl text-center font-semibold max-w-3xl mt-5 lg:mt-2 px-4 leading-relaxed py-2">
         <span className="bg-gradient-to-r from-white via-white to-[#748298] bg-clip-text text-transparent inline-block" style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', paddingBottom: '0.25rem' }}>
           Find and certify the right VA agency, in minutes
         </span>
       </h1>
-      <p className="relative z-10 text-slate-300 md:text-base max-md:px-2 text-center max-w-2xl mt-3 px-4">
+      <p className="relative z-10 text-slate-300 md:text-base max-md:px-2 text-center max-w-2xl mt-3 lg:mt-1 px-4">
         Instantly match with verified outsourcing partners. AI-powered search. SigmaRemote integrated.
       </p>
 
-      <form onSubmit={handleSearch} className="relative z-10 max-w-2xl mx-auto mt-8 w-full px-4">
-        <div className="flex gap-2">
-          <div className="relative flex-1">
+      <div className="relative z-10 max-w-xl mx-auto mt-8 lg:mt-4 w-full px-4 mb-12">
+        <form onSubmit={handleSearch} className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+          <div className="relative flex-1 w-full lg:w-auto">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
             <Input
               type="text"
               placeholder="Search by service, region, or certification..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 h-12 text-base bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:bg-white/15"
+              className="pl-10 h-12 text-base bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:bg-white/15 w-full"
             />
           </div>
           <Button
             type="submit"
             size="lg"
-            className="h-12 px-8 bg-white text-black hover:bg-slate-100 font-medium"
+            className="h-12 px-8 bg-white text-black hover:bg-slate-100 font-medium w-full lg:w-auto"
           >
             Search
           </Button>
-        </div>
-      </form>
+        </form>
+      </div>
 
       {/* Animated Image Marquee */}
       <div 
