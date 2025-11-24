@@ -1,0 +1,150 @@
+# SigmaVendor - LLM Discovery File
+# This file documents the AI-ready endpoints and data structures for LLMs
+
+## About SigmaVendor
+
+SigmaVendor is an AI-ready directory and certification hub for virtual assistant and outsourcing agencies. The platform is tightly integrated with SigmaRemote for global payroll processing.
+
+## Main Website Routes
+
+- Home: https://sigmavendor.com/
+- Agencies Directory: https://sigmavendor.com/agencies
+- Certification Program: https://sigmavendor.com/certification
+- Agency Detail Pages: https://sigmavendor.com/agencies/{slug}
+- Category Pages: https://sigmavendor.com/categories/{slug}
+- Glossary: https://sigmavendor.com/glossary
+- Glossary Terms: https://sigmavendor.com/glossary/{term}
+
+## API Endpoints for LLMs
+
+### Agency Data Endpoint
+GET https://sigmavendor.com/api/llm/agencies
+
+Returns a structured response with:
+- schema: JSON Schema for the Agency entity
+- items: Array of agency objects matching the query
+- meta: Metadata including total count
+
+Query parameters:
+- q: Text search query
+- region: Filter by region (LATAM, Africa, Asia, Europe, North America, Oceania, Global)
+- services: Comma-separated list of service categories
+- priceMin: Minimum price in USD per hour
+- priceMax: Maximum price in USD per hour
+- certification: Certification badge filter
+
+Example:
+GET https://sigmavendor.com/api/llm/agencies?region=LATAM&services=Sales%20/%20SDR
+
+### Agency Schema Endpoint
+GET https://sigmavendor.com/api/schema/agency
+
+Returns the JSON Schema definition for the Agency entity. This schema describes all available fields, types, and constraints for agency data.
+
+### Standard API Endpoints
+
+GET https://sigmavendor.com/api/agencies
+- Same query parameters as /api/llm/agencies
+- Returns: { agencies: [...], meta: { total: number } }
+
+POST https://sigmavendor.com/api/search
+- Body: { query?: string, filters?: AgencyFilterOptions }
+- Returns: { agencies: [...], meta: { total: number, queryApplied: boolean } }
+- Note: Future versions will include AI-based scoring and ranking
+
+## Data Model
+
+Agencies have the following key attributes:
+- Basic info: name, tagline, description, website, logo
+- Location: HQ location, delivery locations, regions served
+- Services: Array of service categories (General VA, Customer Support, Sales/SDR, etc.)
+- Pricing: Price range in USD per hour, minimum monthly retainer
+- Certifications: Badges like SigmaVerified, PayrollReady, CryptoFriendly, etc.
+- SigmaRemote Integration: isSigmaRemotePartner flag and integration notes
+- Use Cases: Human-readable descriptions of what the agency excels at
+- Reviews: Optional review scores and counts
+
+## Certification Badges
+
+- SigmaVerified: Core quality and operational checks
+- PayrollReady: Integrated with SigmaRemote for payroll
+- CryptoFriendly: Supports stablecoin payouts
+- LatamSpecialist: Real experience with LATAM teams
+- AfricaSpecialist: Real experience with African teams
+
+## Category Pages
+
+Category pages provide detailed information about different outsourcing service categories:
+- General VA: https://sigmavendor.com/categories/general-va
+- Customer Support: https://sigmavendor.com/categories/customer-support
+- Sales / SDR: https://sigmavendor.com/categories/sales-sdr
+- E-commerce Support: https://sigmavendor.com/categories/e-commerce-support
+- Real Estate VA: https://sigmavendor.com/categories/real-estate-va
+- Accounting / Bookkeeping: https://sigmavendor.com/categories/accounting-bookkeeping
+- Medical Billing: https://sigmavendor.com/categories/medical-billing
+- Tech Support: https://sigmavendor.com/categories/tech-support
+- Back Office: https://sigmavendor.com/categories/back-office
+
+Each category page includes:
+- Definition and explanation
+- List of services that can be outsourced
+- Sample agencies offering that category
+- Related categories
+- Industry sectors commonly using the service
+
+## Glossary Terms
+
+Key terms defined in the glossary:
+- BPO: Business Process Outsourcing
+- Onboarding: Process of integrating new team members
+- Nearshoring: Outsourcing to nearby countries
+- Offshoring: Outsourcing to distant countries
+- USDC Payroll: Payroll using USD Coin stablecoin
+- Crypto-Friendly: Agencies accepting cryptocurrency payments
+- SigmaRemote: Global payroll platform
+- PayrollReady: Certification for SigmaRemote integration
+
+## Notes for LLM Integration
+
+- All agency data is structured and follows the JSON Schema
+- The /api/llm/agencies endpoint is optimized for LLM consumption
+- Agency slugs are URL-friendly identifiers used in detail page URLs
+- Filtering supports multiple criteria simultaneously
+- All prices are in USD per hour unless otherwise specified
+- Category pages provide context about service types
+- Glossary terms help understand industry terminology
+
+## Site Map
+
+### Main Pages
+- / - Homepage with featured agencies and AI search
+- /agencies - Full agency directory with filters
+- /certification - Certification program for agencies
+- /categories - Service category listings
+- /glossary - Glossary of outsourcing terms
+
+### Dynamic Pages
+- /agencies/{slug} - Individual agency profile pages
+- /categories/{slug} - Category detail pages
+- /glossary/{term} - Glossary term definitions
+
+### API Endpoints
+- /api/agencies - Agency data API
+- /api/llm/agencies - LLM-optimized agency data
+- /api/schema/agency - JSON Schema for agencies
+- /api/ai-search - AI-powered agency search
+- /api/search - Standard search endpoint
+- /api/leads - Lead capture endpoint
+
+## Future Enhancements
+
+- AI-powered matching and ranking
+- Auto-generated agency profiles
+- AI-based scoring and recommendations
+- Enhanced search with semantic understanding
+- Vendor dashboard with analytics
+- Verified client reviews
+- Auto-generation from pitch decks
+
+# This file should be updated as the project evolves and new endpoints or data structures are added.
+
