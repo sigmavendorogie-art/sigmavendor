@@ -9,6 +9,19 @@ AI-ready directory and certification hub for virtual assistant and outsourcing a
 - Node.js 18+ 
 - npm or yarn
 
+### Git Configuration
+
+**IMPORTANT**: This project uses specific git configuration. Before making commits, ensure:
+
+```bash
+git config user.name "sigmavendor"
+git config user.email "sigmavendor.ogie@gmail.com"
+```
+
+**Note**: This project uses SigmaVendor branding only. Do NOT use `office@infinus.rs` or any Infinus-related emails/names.
+
+See `.gitrules` file for more details.
+
 ### Installation
 
 1. Install dependencies:

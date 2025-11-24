@@ -1,0 +1,33 @@
+# SigmaVendor Project Rules
+
+## Git Configuration
+
+**IMPORTANT**: This project uses the following git configuration:
+
+- **User Name**: `sigmavendor`
+- **User Email**: `sigmavendor.ogie@gmail.com`
+
+### Setting up Git for this project:
+
+```bash
+git config user.name "sigmavendor"
+git config user.email "sigmavendor.ogie@gmail.com"
+```
+
+## Project Identity
+
+- **Project Name**: SigmaVendor
+- **Brand**: SigmaVendor (not Infinus)
+- All references should use "SigmaVendor" or "sigmavendor" branding
+
+## Email Usage
+
+- **Git commits**: `sigmavendor.ogie@gmail.com`
+- **Contact email** (for users): `hello@sigmavendor.com` (as defined in components)
+
+## Notes
+
+- Do NOT use `office@infinus.rs` or any Infinus-related emails
+- Do NOT use "infinus" branding anywhere in this project
+- This project is independent and uses SigmaVendor branding only
+
