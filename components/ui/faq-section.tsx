@@ -17,7 +17,7 @@ const faqData = [
       <>
         SigmaVendor is a matching platform where companies can find verified outsourcing partners - such as virtual assistant agencies, customer support teams, finance ops providers, and other back-office specialists.
         <br /><br />
-        It's built for companies that need reliable external support, and for agencies that want to be discovered by these clients.
+        It&apos;s built for companies that need reliable external support, and for agencies that want to be discovered by these clients.
       </>
     ),
   },
@@ -35,7 +35,7 @@ const faqData = [
     question: "How does the matching flow work?",
     answer: (
       <>
-        You tell us what type of help you need - whether it's VA support, CX, finance ops, or another role - and we surface a shortlist of verified partners that fit your requirements.
+        You tell us what type of help you need - whether it&apos;s VA support, CX, finance ops, or another role - and we surface a shortlist of verified partners that fit your requirements.
         <br /><br />
         Each recommendation includes reasoning like skills match, experience, pricing, and timezone fit, so you can make a confident choice quickly.
       </>
@@ -45,7 +45,7 @@ const faqData = [
     question: "What types of roles and vendors can I find on SigmaVendor?",
     answer: (
       <>
-        You'll find specialized outsourcing partners across virtual assistant work, customer support, finance and bookkeeping, compliance and back-office operations, and other remote operational roles.
+        You&apos;ll find specialized outsourcing partners across virtual assistant work, customer support, finance and bookkeeping, compliance and back-office operations, and other remote operational roles.
         <br /><br />
         Every vendor is verified for skills, communication, tooling, and delivery quality.
       </>
