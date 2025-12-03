@@ -122,7 +122,7 @@ export function LeadCaptureForm() {
             </div>
 
             <Button type="submit" size="lg" className="w-full">
-              Get matched with agencies
+              Get Matched in Minutes
             </Button>
           </form>
         )}

@@ -111,11 +111,11 @@ export default function HeroSection() {
 
       <h1 className="relative z-10 text-4xl md:text-6xl text-center font-semibold max-w-3xl mt-5 lg:mt-2 px-4 leading-relaxed py-2">
         <span className="bg-gradient-to-r from-white via-white to-[#748298] bg-clip-text text-transparent inline-block" style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', paddingBottom: '0.25rem' }}>
-          Find and certify the right VA agency, in minutes
+          Find Verified Outsourcing Partners Built for Modern Teams
         </span>
       </h1>
       <p className="relative z-10 text-slate-300 md:text-base max-md:px-2 text-center max-w-2xl mt-3 lg:mt-1 px-4">
-        Instantly match with verified outsourcing partners. AI-powered search. SigmaRemote integrated.
+        AI-powered matching for finding the best talent, verified vendors, clear reasoning, and global payroll integration.
       </p>
 
       <div className="relative z-10 max-w-xl mx-auto mt-8 lg:mt-4 w-full px-4 mb-12">
@@ -230,6 +230,9 @@ export default function HeroSection() {
             })}
         </motion.div>
       </div>
+
+      {/* Smooth gradient transition to next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-black/30 to-black pointer-events-none z-20" />
     </section>
   );
 }

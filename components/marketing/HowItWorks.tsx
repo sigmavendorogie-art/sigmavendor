@@ -3,19 +3,48 @@
 import Image from "next/image";
 import { Timeline } from "@/components/ui/timeline";
 import { AnimatedHeading } from "@/components/ui/animated-heading";
+import { motion } from "framer-motion";
 
 export function HowItWorks() {
+  // Suptilne animacije samo za tekst
+  const textVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 15,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut",
+      },
+    },
+  };
+
   const timelineData = [
     {
       title: "Step 1",
       content: (
         <div>
-          <h4 className="text-white text-xl md:text-2xl font-semibold mb-4 tracking-tight">
+          <motion.h4 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={textVariants}
+            className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight"
+          >
             Describe your ideal agency
-          </h4>
-          <p className="text-slate-300 text-sm md:text-base font-medium mb-8">
+          </motion.h4>
+          <motion.p 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={textVariants}
+            className="text-slate-300 text-sm md:text-base font-medium mb-8"
+          >
             Tell us what services you&apos;re outsourcing - location, skills, pricing, and more. SigmaVendor AI will handle the rest. Examples: Virtual Assistant, LATAM, Crypto-friendly, &lt; $10/hr
-          </p>
+          </motion.p>
           <div className="grid grid-cols-1 gap-4">
             <Image
               src="/How it works/image1.jpg"
@@ -32,12 +61,24 @@ export function HowItWorks() {
       title: "Step 2",
       content: (
         <div>
-          <h4 className="text-white text-xl md:text-2xl font-semibold mb-4 tracking-tight">
+          <motion.h4 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={textVariants}
+            className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight"
+          >
             Get matched - fast and accurately
-          </h4>
-          <p className="text-slate-300 text-sm md:text-base font-medium mb-8">
+          </motion.h4>
+          <motion.p 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={textVariants}
+            className="text-slate-300 text-sm md:text-base font-medium mb-8"
+          >
             Our AI engine curates your shortlist from certified agencies. Compare reviews, badges, and pricing - all in one place. Look for SigmaVerified badges and 24hr turnaround times.
-          </p>
+          </motion.p>
           <div className="grid grid-cols-1 gap-4">
             <Image
               src="/How it works/image2.jpg"
@@ -54,12 +95,24 @@ export function HowItWorks() {
       title: "Step 3",
       content: (
         <div>
-          <h4 className="text-white text-xl md:text-2xl font-semibold mb-4 tracking-tight">
+          <motion.h4 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={textVariants}
+            className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight"
+          >
             Hire with confidence
-          </h4>
-          <p className="text-slate-300 text-sm md:text-base font-medium mb-8">
+          </motion.h4>
+          <motion.p 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={textVariants}
+            className="text-slate-300 text-sm md:text-base font-medium mb-8"
+          >
             Finalize the match, sign contracts. Global payments, done right. Start onboarding your new team today.
-          </p>
+          </motion.p>
           <div className="grid grid-cols-1 gap-4">
             <Image
               src="/How it works/image3.jpg"
@@ -75,8 +128,11 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="relative w-screen overflow-hidden bg-black pt-16 lg:pt-24 pb-0 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-gradient-3.svg')] bg-center bg-cover">
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 lg:px-8 pb-0">
+    <section className="relative w-screen overflow-hidden bg-black pt-0 pb-0 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-gradient-3.svg')] bg-center bg-cover">
+      {/* Smooth gradient transition from hero section */}
+      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-black via-black/70 to-transparent pointer-events-none z-10" />
+      
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 lg:px-8 pt-16 lg:pt-24 pb-0">
         <div className="text-center mb-12">
           <AnimatedHeading>
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 tracking-tight">

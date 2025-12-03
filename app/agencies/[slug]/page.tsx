@@ -555,7 +555,7 @@ export default function AgencyDetailPage({ params }: Props) {
                 <a href="/#get-matched" className="flex-1 sm:flex-initial">
                   <Button size="lg" className="w-full sm:w-auto px-8 font-semibold">
                     <MessageSquare className="mr-2 h-5 w-5" />
-                    Get Matched
+                    Get Matched in Minutes
                   </Button>
                 </a>
                 {agency.websiteUrl && (

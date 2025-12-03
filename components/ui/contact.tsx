@@ -258,7 +258,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   </div>
 
                   <Button type="submit" className="w-full bg-slate-900 text-white hover:bg-slate-800 font-medium" size="lg">
-                    Get matched with agencies
+                    Get Matched in Minutes
                   </Button>
                 </form>
               </>

@@ -131,7 +131,7 @@ export default function CategoryPage({ params }: Props) {
             </Link>
             <Link href="/#get-matched">
               <Button size="lg" variant="outline">
-                Get Matched
+                Get Matched in Minutes
               </Button>
             </Link>
           </div>

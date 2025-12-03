@@ -99,7 +99,7 @@ export default function HeroSection({
                 type="button"
                 className="border border-white rounded-full px-6 py-2 text-sm font-medium hover:bg-white hover:text-black transition-colors text-white"
               >
-                Get matched
+                Get Matched in Minutes
               </button>
             </Link>
           </div>

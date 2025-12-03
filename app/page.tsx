@@ -15,6 +15,9 @@ import {
 import { Typewriter } from "@/components/ui/typewriter-text";
 import { Button } from "@/components/ui/button";
 import { AnimatedHeading } from "@/components/ui/animated-heading";
+import { FAQ } from "@/components/ui/faq-section";
+import { PartneredSolutionCard } from "@/components/ui/card-21";
+import { PaymentFeatureSection } from "@/components/ui/payment-feature-section";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -51,6 +54,12 @@ export default function HomePage() {
       <div className="relative min-h-screen -mt-20">
         <HeroSection />
       </div>
+
+      <HowItWorks />
+
+      <PageShell>
+        <PaymentFeatureSection />
+      </PageShell>
 
       <PageShell>
 
@@ -103,7 +112,65 @@ export default function HomePage() {
         </section>
       </PageShell>
 
-      <HowItWorks />
+      <PageShell>
+        <section className="py-16 lg:py-24 space-y-10">
+          <div className="text-center">
+            <AnimatedHeading>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+                Partnered Solutions
+              </h2>
+            </AnimatedHeading>
+            <AnimatedHeading delay={0.2}>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                SigmaVendor collaborates with specialized partners to help clients with talent management, operational support, and industry-specific needs.
+              </p>
+            </AnimatedHeading>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="w-full h-[450px]">
+              <PartneredSolutionCard
+                imageUrl="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&auto=format&fit=crop&q=80"
+                title="Talent Management Platforms"
+                description="Streamline recruitment, onboarding, and performance management with integrated talent solutions."
+                href="#"
+                themeColor="220 50% 35%"
+              />
+            </div>
+
+            <div className="w-full h-[450px]">
+              <PartneredSolutionCard
+                imageUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&auto=format&fit=crop&q=80"
+                title="Training & Upskilling Partners"
+                description="Access comprehensive training programs to upskill your remote teams and improve productivity."
+                href="#"
+                themeColor="150 50% 30%"
+              />
+            </div>
+
+            <div className="w-full h-[450px]">
+              <PartneredSolutionCard
+                imageUrl="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&auto=format&fit=crop&q=80"
+                title="Quality Assurance & Monitoring Tools"
+                description="Ensure consistent quality and monitor performance with advanced QA and tracking solutions."
+                href="#"
+                themeColor="280 50% 35%"
+              />
+            </div>
+
+            <div className="w-full h-[450px]">
+              <PartneredSolutionCard
+                imageUrl="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&auto=format&fit=crop&q=80"
+                title="Workforce Compliance Solutions"
+                description="Stay compliant across global markets with automated compliance and legal support tools."
+                href="#"
+                themeColor="25 50% 35%"
+              />
+            </div>
+          </div>
+        </section>
+      </PageShell>
+
       <ContactSection />
 
       <PageShell>
@@ -112,6 +179,10 @@ export default function HomePage() {
           <SigmaCtaBlock />
         </div>
       </PageShell>
+
+      <section id="faq">
+        <FAQ />
+      </section>
     </>
   );
 }
