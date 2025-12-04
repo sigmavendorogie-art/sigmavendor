@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { AnimatedHeading } from "@/components/ui/animated-heading";
 import { FAQ } from "@/components/ui/faq-section";
 import { PartneredSolutionCard } from "@/components/ui/card-21";
-import { PaymentFeatureSection } from "@/components/ui/payment-feature-section";
+// import { PaymentFeatureSection } from "@/components/ui/payment-feature-section";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -57,9 +57,10 @@ export default function HomePage() {
 
       <HowItWorks />
 
-      <PageShell>
+      {/* Temporarily hidden - can be restored later */}
+      {/* <PageShell>
         <PaymentFeatureSection />
-      </PageShell>
+      </PageShell> */}
 
       <PageShell>
 
